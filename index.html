@@ -4,44 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Go Guitars</title>
   </head>
   <body>
     
     <header id="header">
-        <img src="/goguitarsimages/go guitars.png" alt="" id="header-img" />
-        <h1>Go Guitars!</h1>
-      
+        <div class="logo">
+            <img src="/goguitarsimages/go guitars.png" alt="guitar logo" id="header-img" />
+            <h1>Go Guitars!</h1>
+        </div>
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="">Features</a></li>
-          <li class="nav-link"><a href="">Our Guitars</a></li>
-          <li class="nav-link"><a href="">Pricing</a></li>
-          <li class="nav-link"><a href="">About Us</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#guitars-pricing">Our Guitars</a></li>
+          <li><a class="nav-link" href="#video">Demo</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
-        <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
-        <label for="email-user">Subscribe to our newsletter</label>
-          <input type="email" id="email-user" name="email-user" placeholder="Enter your email">
-          <input type="submit" value="Subscribe">
+        <form action="https://www.freecodecamp.com/email-submit" method="post" id="form" target="_blank">
+        <label for="email">Subscribe to our newsletter</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <br>
+          <input type="submit" value="Subscribe" id="submit">
         </form>
     </div>
+    <section class="features" id="features">
+        <div class="site-features">
+            <div class="icons">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <div class="description">
+                <h2>Premium Materials</h2>
+                <p>Our Guitars use the top materials which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+        </div>
+        <div class="site-features">
+            <div class="icons">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="description">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you receive your guitar as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="site-features">
+            <div class="icons">
+                <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="description">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-video">
+        <iframe id="video" width="640" height="420" src="https://www.youtube.com/embed/D4Y52QYm540" title="Fender CF-60 acoustic guitar :: Demo, Soundcheck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-    <div class="container-video">
-        <iframe width="607" height="341" src="https://www.youtube.com/embed/D4Y52QYm540" title="Fender CF-60 acoustic guitar :: Demo, Soundcheck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="price-guitars">
+    <section class="price-guitars" id="guitars-pricing">
         <div class="types-guitar">
             <div class="guitar-name">
                 <h2 class="guitar-header">Acoustic Guitar</h2>
                 <h3>$75.00</h3>
                 <p>Unlike electric guitars, which can be manipulated tonally with pedals and gizmos, an acoustic pumps out a sound fueled by its dimensions and body woods.</p>
-                
+                <input type="submit" value="Select">
             </div>
         </div>
         <div class="types-guitar">
@@ -60,35 +91,31 @@
                 <input type="submit" value="Select">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-about">
+    <section class="container-about" id="about">
         <div class="about-containers">
-            <h1></h1>
-            <img src="" alt="">
+            <img src="/goguitarsimages/go guitars.png" alt="guitar logo">
+            <h1>Go Guitars!</h1>
         </div>
 
         <div class="about-content">
             <h2>About Go Guitars</h2>
             <ul>
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class="about-content">
-            <h2>Site Informations</h2>
+            <h2>Site Information</h2>
             <ul>
-                <li><a href="#">Terms&amp;Conditions</a></li>
-                <li><a href="#">End User License Agreement</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#about">Terms&amp;Conditions</a></li>
+                <li><a href="#about">End User License Agreement</a></li>
+                <li><a href="#about">Privacy Policy</a></li>
             </ul>
         </div>
-    </div>
-    
-    <footer id="footer">
-        <h4></h4>
-    </footer>
+    </section>
 
   </body>
 </html>
